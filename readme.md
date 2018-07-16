@@ -37,4 +37,4 @@ $ php artisan serve
 
 É possivel cadastrar usuarios e logar no sistema,
 
-O sistema por segurnaça bloqueia o email e o ip apos 3 tentativas erradas, necessitando fazer o desbloqueio em um campo logo abaixo do login
+O sistema por segurnaça bloqueia o email e o ip apos 3 tentativas erradas, necessitando fazer o desbloqueio em um campo logo abaixo do login, apos 3 minutos é desbloqueado novamente
