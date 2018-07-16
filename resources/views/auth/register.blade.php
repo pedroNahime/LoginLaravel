@@ -27,7 +27,12 @@
             </campo>
             <campo tipo="password" campo="password-confirm" classes="" nome="Confirmar Senha" valor="" name="password_confirmation">
             </campo>
-            <campo tipo="file" campo="img-perfil"  classes=""  nome="Imagem de Perfil"  name="picture"></campo>
+            <campo tipo="file" campo="img-perfil"  classes=""  nome="Imagem de Perfil"  name="picture">
+                @if ($errors->has('picture'))                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('picture') }}</strong>
+                                    </span>
+                @endif
+            </campo>
             <div class="form-group row mb-0">
                 <div class="col-md-6 offset-md-4">
                     <button type="submit"  class="btn btn-primary">

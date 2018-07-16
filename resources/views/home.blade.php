@@ -7,8 +7,7 @@
                 {{ session('status') }}
             </div>
         @endif
-            <p></p>
-            <img src="" alt="">
-            <img src="img/{{Auth::user()->picture}}" alt="{{Auth::user()->name}}" class="img-thumbnail">
+            <img class="card-img-top" src="img/{{Auth::user()->picture}}" alt="{{Auth::user()->name}}">
+
     </logado>
 @endsection

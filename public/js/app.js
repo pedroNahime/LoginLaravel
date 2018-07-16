@@ -48043,7 +48043,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -48054,6 +48054,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -48094,9 +48095,11 @@ var render = function() {
             "div",
             { staticClass: "card-body" },
             [
-              _vm._t("default"),
+              _c("div", { staticClass: "text-center" }, [
+                _c("p", [_vm._v(_vm._s(_vm.msg))])
+              ]),
               _vm._v(" "),
-              _c("p", [_vm._v(_vm._s(_vm.msg))])
+              _vm._t("default")
             ],
             2
           )
