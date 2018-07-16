@@ -2,7 +2,7 @@
 
 @section('content')
     <wrapper nome="{{ __('Register') }}">
-        <formulario rota="{{route('register')}}">
+        <cadastro rota="{{route('register')}}">
             @csrf
             <campo tipo="text" campo="nome" classes="{{ $errors->has('name') ? ' is-invalid' : '' }}" nome="Nome"   valor="{{ old('name') }}" name="name">
                 @if ($errors->has('name'))
@@ -25,16 +25,16 @@
                                     </span>
                 @endif
             </campo>
-            <campo tipo="password" campo="password-confirm" classes="''" nome="Confirmar Senha" valor="" name="password_confirmation">
-
+            <campo tipo="password" campo="password-confirm" classes="" nome="Confirmar Senha" valor="" name="password_confirmation">
             </campo>
+            <campo tipo="file" campo="img-perfil"  classes=""  nome="Imagem de Perfil"  name="picture"></campo>
             <div class="form-group row mb-0">
                 <div class="col-md-6 offset-md-4">
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit"  class="btn btn-primary">
                         Registrar
                     </button>
                 </div>
             </div>
-        </formulario>
+        </cadastro>
     </wrapper>
 @endsection

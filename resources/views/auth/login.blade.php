@@ -43,6 +43,10 @@
             </div>
         </div>
     </formulario>
+    @if ($errors->has('email'))
+    <hr>
+    <desbloqueio></desbloqueio>
+    @endif
 </wrapper>
 
 @endsection

@@ -25,7 +25,16 @@ class imgsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $path = $request->file('picture')->store('img');
+
+        response()->json($path, 201);
+
+//            $data['picture'] = $request->picture->store('img');
+//
+//            return
+
+
     }
 
     /**
